@@ -111,7 +111,7 @@ static Matrix5x5 GetSymmetricClosure(in Matrix5x5 matrix)
     {
         for (int j = 0; j < 5; j++)
         {
-            result[i, j] &= transpose[i, j];
+            result[i, j] |= transpose[i, j];
         }
     }
 
